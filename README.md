@@ -8,8 +8,12 @@ Doctoral candidate @ Technical University Munich (TUM).
 
 This repository contains further information of our RA-L paper.
 
-
 [ArXiv paper](https://arxiv.org/abs/2409.05655) | [RA-L paper (tbd)]() | [YouTube (tbd)]()
+
+<div align="center">
+  <img src="images/approach_overview.jpg" hspace="3%" vspace="60px"></a>
+</div>
+
 
 ## Citation 
 
