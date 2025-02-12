@@ -1,4 +1,5 @@
 # Interactive incremental learning of generalizable skills with local trajectory modulation
+ <base target="_blank">
 
 Authors: Markus Knauer, Alin Albu-Schäffer, Freek Stulp and João Silvério
 
@@ -10,10 +11,11 @@ This repository contains further information of our RA-L paper.
 
 [ArXiv paper](https://arxiv.org/abs/2409.05655) | [RA-L paper (tbd)]() | [YouTube](https://youtu.be/nqigz0l1syA)
 
-<div align="center">
-  <a href="https://www.youtube.com/watch?v=nqigz0l1syA"><img src=https://img.youtube.com/vi/nqigz0l1syA/0.jpg hspace="3%" vspace="60px"></a>
-</div>
+## Video
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=nqigz0l1syA"><img src="images/Thumbnail.jpg" hspace="3%" vspace="60px"></a>
+</div>
 
 ## Overview
 
