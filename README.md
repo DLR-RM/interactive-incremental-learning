@@ -5,7 +5,7 @@ Authors: Markus Knauer, Alin Albu-Schäffer, Freek Stulp and João Silvério
 
 Responsible: Markus Knauer (markus.knauer@dlr.de) 
 Research Scientist @ German Aerospace Center (DLR), Institut of Robotics and Mechatronics, Munich, Germany &
-Doctoral candidate & Teaching Assistant @ Technical University Munich (TUM).
+Doctoral candidate & Teaching Assistant @ Technical University of Munich (TUM), Germany.
 
 This repository contains further information on our RA-L paper.
 
