@@ -5,11 +5,11 @@ Authors: Markus Knauer, Alin Albu-Schäffer, Freek Stulp and João Silvério
 
 Responsible: Markus Knauer (markus.knauer@dlr.de) 
 Research Scientist @ German Aerospace Center (DLR), Institut of Robotics and Mechatronics, Munich, Germany &
-Doctoral candidate @ Technical University Munich (TUM).
+Doctoral candidate & Teaching Assistant @ Technical University Munich (TUM).
 
 This repository contains further information on our RA-L paper.
 
-[ArXiv paper](https://arxiv.org/abs/2409.05655) | [RA-L paper](https://ieeexplore.ieee.org/document/10887119/) | [YouTube](https://youtu.be/nqigz0l1syA)
+[RA-L paper](https://ieeexplore.ieee.org/document/10887119/) | [ArXiv paper](https://arxiv.org/abs/2409.05655) | [YouTube](https://youtu.be/nqigz0l1syA)
 
 
 ## Video (Link to YouTube)
@@ -38,8 +38,8 @@ If you use our ideas in a research project or publication, please cite as follow
 
 ```
 @ARTICLE{knauer2025,
-  author={Knauer, Markus and Albu-Schäffer, Alin and Stulp, Freek and Silvério, João},
-  journal={IEEE Robotics and Automation Letters}, 
+  author={Knauer, Markus and Albu-Sch{\"a}ffer, Alin and Stulp, Freek and Silv{\'e}rio, Jo{\~a}o},
+  journal={IEEE Robotics and Automation Letters (RA-L)}, 
   title={Interactive incremental learning of generalizable skills with local trajectory modulation}, 
   year={2025},
   keywords={Incremental Learning; Imitation Learning; Continual Learning},
