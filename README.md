@@ -9,7 +9,7 @@ Doctoral candidate & Teaching Assistant @ Technical University of Munich (TUM), 
 
 This repository contains further information on our RA-L paper.
 
-[RA-L paper](https://ieeexplore.ieee.org/document/10887119/) | [ArXiv paper](https://arxiv.org/abs/2409.05655) | [YouTube](https://youtu.be/nqigz0l1syA)
+[RA-L paper](https://ieeexplore.ieee.org/document/10887119/) | [ArXiv paper](https://arxiv.org/abs/2409.05655) | [ELIB paper](https://elib.dlr.de/212796/) | [YouTube](https://youtu.be/nqigz0l1syA)
 
 
 ## Video (Link to YouTube)
