@@ -3,7 +3,7 @@
 
 Authors: Markus Knauer, Alin Albu-Schäffer, Freek Stulp and João Silvério
 
-Responsible: Markus Knauer (markus.knauer@dlr.de) 
+Responsible: Markus Knauer (markus.knauer@dlr.de)
 Research Scientist @ German Aerospace Center (DLR), Institut of Robotics and Mechatronics, Munich, Germany &
 Doctoral candidate & Teaching Assistant @ Technical University of Munich (TUM), Germany.
 
@@ -31,7 +31,6 @@ The problem of generalization in learning from demonstration (LfD) has received 
   <a href="https://arxiv.org/abs/2409.05655" target="_blank"><img src="images/approach_overview.jpg" hspace="3%" vspace="60px"></a>
 </div>
 
-
 ## Citation 
 
 If you use our ideas in a research project or publication, please cite as follows:
@@ -39,9 +38,12 @@ If you use our ideas in a research project or publication, please cite as follow
 ```
 @ARTICLE{knauer2025,
   author={Knauer, Markus and Albu-Sch{\"a}ffer, Alin and Stulp, Freek and Silv{\'e}rio, Jo{\~a}o},
-  journal={IEEE Robotics and Automation Letters (RA-L)}, 
-  title={Interactive incremental learning of generalizable skills with local trajectory modulation}, 
+  journal={IEEE Robotics and Automation Letters (RA-L)},
+  title={Interactive incremental learning of generalizable skills with local trajectory modulation},
   year={2025},
+  volume={10},
+  number={4},
+  pages={3398-3405},
   keywords={Incremental Learning; Imitation Learning; Continual Learning},
   doi={10.1109/LRA.2025.3542209}}
 }
@@ -52,3 +54,4 @@ If you use our ideas in a research project or publication, please cite as follow
 <div align="center">
   <a href="https://www.dlr.de/EN/Home/home_node.html"><img src="images/logo.svg" hspace="3%" vspace="60px"></a>
 </div>
+](https://github.com/DLR-RM/interactive-incremental-learning.git)
