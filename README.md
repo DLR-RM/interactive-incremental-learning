@@ -54,4 +54,3 @@ If you use our ideas in a research project or publication, please cite as follow
 <div align="center">
   <a href="https://www.dlr.de/EN/Home/home_node.html"><img src="images/logo.svg" hspace="3%" vspace="60px"></a>
 </div>
-](https://github.com/DLR-RM/interactive-incremental-learning.git)
