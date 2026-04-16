@@ -456,6 +456,7 @@ class TPKMP:
         N = mu_TP.get_shape()[0]
         dim = self.nb_dim_out
 
+        variance_predicted_points: np.ndarray | None
         if all(ele in self.output_data_structure for ele in ORIENTATION_SO3_MANIFOLD):
             variance_predicted_points = None
         elif mu_variance.ndim == 1:

@@ -43,7 +43,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     version=__version__,
-    python_requires=">=3.12",
+    python_requires=">=3.10",
     project_urls={
         "Code": "https://github.com/DLR-RM/interactive-incremental-learning",
         "RA-L": "https://ieeexplore.ieee.org/document/10887119/",
@@ -53,6 +53,8 @@ setup(
     # PyPI package information.
     classifiers=[
         "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
         "Programming Language :: Python :: 3.12",
         "Programming Language :: Python :: 3.13",
     ],

@@ -1,7 +1,7 @@
 # Interactive incremental learning of generalizable skills with local trajectory modulation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![CI](https://github.com/DLR-RM/interactive-incremental-learning/actions/workflows/ci.yml/badge.svg)](https://github.com/DLR-RM/interactive-incremental-learning/actions/workflows/ci.yml)
 
 <base target="_blank">
