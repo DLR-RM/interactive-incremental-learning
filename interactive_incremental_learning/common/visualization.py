@@ -5,6 +5,7 @@ bands, via-point annotations, and variable stiffness profiles.
 """
 
 from pathlib import Path
+
 import numpy as np
 import seaborn as sns
 from matplotlib import pyplot as plt
@@ -256,12 +257,12 @@ def plot_demonstrations(  # noqa: C901
         for current_center_pose, current_axis in zip(current_center_poses, current_axes):
             current_center_pose = np.round(current_center_pose / 0.25) * 0.25
             # comment this line to remove same span on all figures
-            current_axis.set_ylim([current_center_pose - half_span, current_center_pose + half_span])
+            current_axis.set_ylim((current_center_pose - half_span, current_center_pose + half_span))
 
     if show_frame_3:
-        all_axis[0][0].set_ylim([-0.05, 0.05])
-        all_axis[0][1].set_ylim([-0.05, 0.05])
-        all_axis[0][2].set_ylim([-0.05, 0.05])
+        all_axis[0][0].set_ylim((-0.05, 0.05))
+        all_axis[0][1].set_ylim((-0.05, 0.05))
+        all_axis[0][2].set_ylim((-0.05, 0.05))
     plt.tight_layout(pad=0, h_pad=0.35)
     plt.savefig(str(output_file_path.absolute()), bbox_inches="tight")
     plt.show()

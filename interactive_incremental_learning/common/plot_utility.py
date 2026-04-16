@@ -283,15 +283,15 @@ class PlotUtility:
                 PlotUtility.figure = plt.figure(figsize=(24, 12))
             h = PlotUtility.figure.add_subplot(111, projection="3d")
             if "demonstration_data" in mode:
-                h.scatter(
+                h.scatter(  # type: ignore[call-arg]
                     xs=train_data_array[:, 0],
                     ys=train_data_array[:, 1],
                     zs=train_data_array[:, 2],
                     s=1,
                 )
-                h.set_xlabel(data_to_plot[0])
-                h.set_ylabel(data_to_plot[1])
-                h.set_zlabel(data_to_plot[2])
+                h.set_xlabel(data_to_plot[0].value)
+                h.set_ylabel(data_to_plot[1].value)
+                h.set_zlabel(data_to_plot[2].value)  # type: ignore[attr-defined]
             else:
                 raise Exception("So far only demonstration data is supported for 3d")
 
@@ -308,14 +308,14 @@ class PlotUtility:
                 )
             if "mean" in mode and predicted_points is not None:
                 predicted_points_3d = predicted_points.get_array(data_to_plot)
-                h.scatter(
+                h.scatter(  # type: ignore[call-arg]
                     xs=predicted_points_3d[:, 0],
                     ys=predicted_points_3d[:, 1],
                     zs=predicted_points_3d[:, 2],
                 )
                 if additional_trajectory is not None:
                     additional_trajectory_array = additional_trajectory.get_array(data_to_plot)
-                    h.scatter(
+                    h.scatter(  # type: ignore[call-arg]
                         xs=additional_trajectory_array[:, 0],
                         ys=additional_trajectory_array[:, 1],
                         zs=additional_trajectory_array[:, 2],
@@ -343,7 +343,7 @@ class PlotUtility:
                 if not (("mean" in mode and "variance" in mode) or "logging" in mode):
                     if "demonstration_data" in mode:
                         if plot_dimensions == "3d":
-                            h.scatter(
+                            h.scatter(  # type: ignore[call-arg]
                                 xs=train_data_array[:, 0],
                                 ys=train_data_array[:, 1],
                                 zs=train_data_array[:, 2],
@@ -379,13 +379,14 @@ class PlotUtility:
                                 s=1,
                             )
                         elif plot_dimensions == "3d":
-                            h.scatter(
+                            h.scatter(  # type: ignore[call-arg]
                                 xs=train_data_array[:, 0],
                                 ys=train_data_array[:, 1],
                                 zs=train_data_array[:, 2],
                             )
                 min_val, max_val = np.min(train_data_array[:, plot_axis]), np.max(train_data_array[:, plot_axis])
                 if "mean" in mode:
+                    assert test_data is not None
                     h.scatter(
                         x=test_data,
                         y=predicted_points_array[:, plot_axis - 1],
@@ -429,6 +430,7 @@ class PlotUtility:
                             color="#080808",
                         )
                 if "logging" in mode:
+                    assert test_data is not None
                     h.scatter(
                         x=test_data,
                         y=predicted_points_array[:, plot_axis - 1],

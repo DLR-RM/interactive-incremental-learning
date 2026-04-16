@@ -315,8 +315,8 @@ class Kmp:
         for i in range(len(input_via)):
             via_point = [input_via[i], output_via[i], float(gamma) * I_O]
 
-            self.x_in = np.append(self.x_in, via_point[0])  # step 1)
-            self.mu_block = np.append(self.mu_block, via_point[1].T)  # step 2)
+            self.x_in = np.append(self.x_in, via_point[0])  # type: ignore[assignment]  # step 1)
+            self.mu_block = np.append(self.mu_block, via_point[1].T)  # type: ignore[assignment]  # step 2)
             self.sigma = np.append(self.sigma, precision.reshape(1, self.nb_dim_out, -1), axis=0)  # step 3)
             self.nb_via += 1
 
