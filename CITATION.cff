@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+title: "Interactive Incremental Learning of Generalizable Skills With Local Trajectory Modulation"
+message: "If you use this software, please cite the article below."
+type: software
+authors:
+  - family-names: Knauer
+    given-names: Markus
+    email: markus.knauer@dlr.de
+    affiliation: "German Aerospace Center (DLR), Institute of Robotics and Mechatronics"
+    orcid: "https://orcid.org/0000-0001-5835-1498"
+  - family-names: Albu-Schäffer
+    given-names: Alin
+    affiliation: "German Aerospace Center (DLR), Institute of Robotics and Mechatronics"
+  - family-names: Stulp
+    given-names: Freek
+    affiliation: "German Aerospace Center (DLR), Institute of Robotics and Mechatronics"
+  - family-names: Silvério
+    given-names: João
+    affiliation: "German Aerospace Center (DLR), Institute of Robotics and Mechatronics"
+license: MIT
+repository-code: "https://github.com/DLR-RM/interactive-incremental-learning"
+url: "https://markusknauer.github.io/"
+keywords:
+  - incremental learning
+  - imitation learning
+  - continual learning
+  - robotics
+  - movement primitives
+preferred-citation:
+  type: article
+  title: "Interactive Incremental Learning of Generalizable Skills With Local Trajectory Modulation"
+  authors:
+    - family-names: Knauer
+      given-names: Markus
+    - family-names: Albu-Schäffer
+      given-names: Alin
+    - family-names: Stulp
+      given-names: Freek
+    - family-names: Silvério
+      given-names: João
+  journal: "IEEE Robotics and Automation Letters (RA-L)"
+  volume: 10
+  issue: 4
+  start: 3398
+  end: 3405
+  year: 2025
+  doi: "10.1109/LRA.2025.3542209"

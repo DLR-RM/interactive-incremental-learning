@@ -1,17 +1,22 @@
 # Interactive incremental learning of generalizable skills with local trajectory modulation
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![CI](https://github.com/DLR-RM/interactive-incremental-learning/actions/workflows/ci.yml/badge.svg)](https://github.com/DLR-RM/interactive-incremental-learning/actions/workflows/ci.yml)
+
 <base target="_blank">
 
-Authors: Markus Knauer, Alin Albu-Schäffer, Freek Stulp and João Silvério
+Authors: [Markus Knauer](https://markusknauer.github.io/), Alin Albu-Schäffer, Freek Stulp, and João Silvério
 
 Responsible: Markus Knauer (markus.knauer@dlr.de)
-Research Scientist @ German Aerospace Center (DLR), Institut of Robotics and Mechatronics, Munich, Germany &
+Research Scientist @ German Aerospace Center (DLR), Institute of Robotics and Mechatronics, Munich, Germany &
 Doctoral candidate & Teaching Assistant @ Technical University of Munich (TUM), Germany.
 
-This repository contains further information on our RA-L paper.
+This repository contains the code to reproduce the experiments from our RA-L paper.
+
+If you are interested, you can find similar projects on [https://markusknauer.github.io](https://markusknauer.github.io/)
 
 [RA-L paper](https://ieeexplore.ieee.org/document/10887119/) | [ArXiv paper](https://arxiv.org/abs/2409.05655) | [ELIB paper](https://elib.dlr.de/212796/) | [YouTube](https://youtu.be/nqigz0l1syA)
-
-## CODE IS COMING SOON! ##
 
 
 ## Video (Link to YouTube)
@@ -20,6 +25,7 @@ This repository contains further information on our RA-L paper.
 <div align="center">
   <a href="https://www.youtube.com/watch?v=nqigz0l1syA" target="_blank"><img src="images/Thumbnail.jpg" hspace="3%" vspace="60px"></a>
 </div>
+
 
 ## Overview
 
@@ -33,7 +39,69 @@ The problem of generalization in learning from demonstration (LfD) has received 
   <a href="https://arxiv.org/abs/2409.05655" target="_blank"><img src="images/approach_overview.jpg" hspace="3%" vspace="60px"></a>
 </div>
 
-## Citation 
+
+## Setup
+
+Create and activate the conda environment:
+
+```bash
+conda env create -f requirements.yaml
+conda activate tpkmp
+```
+
+If you don't have conda installed, follow the [installation guide](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html).
+
+
+## Running the Experiments
+
+Run all four experiments:
+
+```bash
+python interactive_incremental_learning/main.py --experiment 0123 --plot
+```
+
+Or run individual experiments:
+
+```bash
+# Experiment 0: Generalization to new frame configurations
+python interactive_incremental_learning/main.py --experiment 0 --plot
+
+# Experiment 1: Adding via-points to refine the trajectory
+python interactive_incremental_learning/main.py --experiment 1 --plot
+
+# Experiment 2: Adding a new reference frame during execution
+python interactive_incremental_learning/main.py --experiment 2 --plot
+
+# Experiment 3: Computing variable stiffness from uncertainty
+python interactive_incremental_learning/main.py --experiment 3 --plot
+```
+
+See [experiments/README.md](interactive_incremental_learning/experiments/README.md) for expected outputs and detailed descriptions.
+
+## Tests
+
+```bash
+make pytest
+```
+
+## Development
+
+Install in editable mode with test dependencies:
+
+```bash
+pip install -e ".[tests]"
+```
+
+Run all checks:
+
+```bash
+make commit-checks   # format + type check + lint
+make pytest          # run tests with coverage
+```
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+## Citation
 
 If you use our ideas in a research project or publication, please cite as follows:
 
@@ -47,7 +115,7 @@ If you use our ideas in a research project or publication, please cite as follow
   number={4},
   pages={3398-3405},
   keywords={Incremental Learning; Imitation Learning; Continual Learning},
-  doi={10.1109/LRA.2025.3542209}}
+  doi={10.1109/LRA.2025.3542209}
 }
 ```
 
